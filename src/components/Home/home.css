@@ -1,0 +1,8 @@
+section{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    color: beige;
+}
