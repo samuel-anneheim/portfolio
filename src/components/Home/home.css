@@ -5,6 +5,12 @@ section{
     justify-content: center;
     width: 70%;
     margin: auto;
+    animation: section 1.5s;
+}
+
+@keyframes section {
+    from{opacity: 0;}
+    to{opacity: 1;}
 }
 
 article{
@@ -51,10 +57,22 @@ div.explore{
     color: #BEBEBE;
     transition: all 800ms;
     text-align: center;
+    animation: bouton2 3s;
 }
 
 div.explore:hover{
     border: 1px solid black;
     background-color: #BEBEBE;
     color: black;
+}
+
+@keyframes bouton2 {
+    0%{opacity: 0;}
+    30%{
+        opacity: 0;
+        background-color: #BEBEBE;
+        color: black;
+    }
+    75%{ color: #BEBEBE; background-color: black;}
+    100%{opacity: 1;}
 }

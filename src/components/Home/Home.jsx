@@ -1,12 +1,6 @@
 import React from 'react';
 import './home.css'
-import { zoomIn } from 'react-animations';
-import styled, { keyframes } from 'styled-components';
 
-const zoomInAnimation = keyframes`${zoomIn}`;
-const ZoomInDiv = styled.div`
-    animation 3s ${zoomInAnimation}
-`;
 
 
 export const Home = () => {
@@ -20,11 +14,9 @@ export const Home = () => {
                     </div>
                 </article>
                 <article className="container-explore">
-                    <ZoomInDiv>
                         <div className="explore">
                             Explore projects
                         </div>
-                    </ZoomInDiv>
                 </article>
             </div>
         </section>
