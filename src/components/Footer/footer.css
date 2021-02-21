@@ -1,0 +1,27 @@
+footer{
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+}
+
+footer figure{
+    margin: 10px;
+    padding: 0;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer figure img{
+    text-align: center;
+    transition: all 800ms;
+    width: 40px;
+    height: auto;
+}
+footer figure img:hover{
+    width: 50px;
+    height: auto;
+    transform: rotate(360deg);
+}
