@@ -8,6 +8,7 @@ export const Header = () => {
                 <h1>Samuel Anneheim</h1>
                 <ul> 
                     <li>+ Project</li>
+                    <li> | </li>
                     <li>About</li>
                 </ul>
             </nav>

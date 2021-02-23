@@ -1,12 +1,13 @@
 section{
+    position: relative;
     height: 85vh;
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 80%;
-    margin: auto;
-    animation: section 1.5s;
+    animation: section 2s;
 }
 
 @keyframes section {
@@ -21,11 +22,17 @@ article{
 }
 
 article.container-presentation{
-    min-width: 360px;
+    min-width: 320px;
+    hyphens: auto;
+}
+
+article.container-presentation p{
+    max-width: 95%;
 }
 
 h2{
-    font-size: 40px;
+    font-size: 2em;
+    margin: 0;
 }
 h2>span{
     font-size: 60px;
@@ -59,7 +66,7 @@ div.explore{
     color: #BEBEBE;
     transition: all 800ms;
     text-align: center;
-    animation: bouton2 3s;
+    animation: bouton2 3.5s;
 }
 
 div.explore:hover{

@@ -8,10 +8,10 @@ export const Footer = () => {
     return (
         <footer>
             <figure>
-                <img src={linkedin} alt="logo_linkedin" require />
+                <img src={github} alt="logo_github" />
             </figure>
             <figure>
-                <img src={github} alt="logo_github" />
+                <img src={linkedin} alt="logo_linkedin" require />
             </figure>
             <figure>
                 <img src={outlook} alt="logo_outlook" />
