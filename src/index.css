@@ -4,9 +4,13 @@ body {
   padding: 0;
   height: 100%;
   font-family: 'Montserrat', sans-serif;
-  background: url(./img/pexels-pixabay-158826.jpg) center no-repeat;
-  background-size: cover;
   box-sizing: border-box;
+  position: relative;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
 

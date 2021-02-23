@@ -3,5 +3,7 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    background: url(./img/pexels-alex-conchillos-3745234.jpg) center no-repeat;
+    background-size: cover;
 }
