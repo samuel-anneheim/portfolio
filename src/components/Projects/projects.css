@@ -17,11 +17,14 @@ section.container-projects{
     align-items: center;
     justify-content: center;
     background: transparent center no-repeat;
+    background-size: cover;
     color: #E3E1D8;
-    transition: all 2000ms ;
+    transition: all 500ms;
 }
 
+/* 
 .container-projects article:hover{
     background: url(../../img/bgBierre.jpg) center no-repeat;
     background-size: cover;
-}
+    animation: section 2s;
+} */
