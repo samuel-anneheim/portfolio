@@ -1,17 +1,30 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './projects.css';
 import bierre from '../../img/bgBierre.jpg';
+import manga from '../../img/manga.jpg'
 
 export const Projects = () => {
-    const [inHover, setHover] = useState(false);
+    const [inHoverManga, setHoverManga] = useState(false);
+    const [inHoverBierre, setHoverBierre] = useState(false);
+    const [inHoverTest1, setHoverTest1] = useState(false);
+    const [inHoverTest2, setHoverTest2] = useState(false);
 
-    const test = document.getElementById('holla')
-    let holla
-    // let salut
 
-    let style = {
-        background: inHover ? `url(${bierre}) center no-repeat`  : `transparent`,
-        backgroundSize: inHover ? 'cover' : 'initial',
+    let styleBierre = {
+        background: inHoverBierre ? `url(${bierre}) center no-repeat` : `transparent`,
+        backgroundSize: inHoverBierre ? 'cover' : 'initial',
+    }
+    let styleManga = {
+        background: inHoverManga ? `url(${manga}) center no-repeat` : `transparent`,
+        backgroundSize: inHoverManga ? 'cover' : 'initial',
+    }
+    let styleTest1 = {
+        background: inHoverTest1 ? `url(${bierre}) center no-repeat` : `transparent`,
+        backgroundSize: inHoverTest1 ? 'cover' : 'initial',
+    }
+    let styleTest2 = {
+        background: inHoverTest2? `url(${bierre}) center no-repeat` : `transparent`,
+        backgroundSize: inHoverTest2 ? 'cover' : 'initial',
     }
 
 
@@ -41,22 +54,24 @@ export const Projects = () => {
 
     return (
         <section className="container-projects">
-            {/* <article className="un" id="un">
-                <h1
-                onMouseOver={changeback(true, 'un', bierre)}
-                onMouseLeave={changeback(false)}>Projet 1</h1>
-            </article> */}
-            <article className="deux">
-                <h1>Projet 1</h1>
+            <article className="un" style={styleTest1}>
+                <h1 onMouseEnter={() => setHoverTest1(true)}
+                    onMouseLeave={() => setHoverTest1(false)}>Projet 1</h1>
             </article>
-            <article className="trois" >
-                <h1 >Projet 12</h1>
+
+            <article className="deux" style={styleTest2}>
+                <h1 onMouseEnter={() => setHoverTest2(true)}
+                    onMouseLeave={() => setHoverTest2(false)}>Projet 1</h1>
             </article>
-            <article className="quatre" id="holla" style={style} >
 
-                <h1 id="test" onMouseEnter={() => setHover(true)}
-                    onMouseLeave={() => setHover(false)}>Projet 1</h1>
+            <article className="trois" style={styleManga}>
+                <h1 onMouseEnter={() => setHoverManga(true)}
+                    onMouseLeave={() => setHoverManga(false)}>Projet 12</h1>
+            </article>
 
+            <article className="quatre" style={styleBierre} >
+                <h1 onMouseEnter={() => setHoverBierre(true)}
+                    onMouseLeave={() => setHoverBierre(false)}>Projet 1</h1>
             </article>
         </section>
     );

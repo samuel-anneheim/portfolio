@@ -22,9 +22,8 @@ section.container-projects{
     transition: all 500ms;
 }
 
-/* 
-.container-projects article:hover{
-    background: url(../../img/bgBierre.jpg) center no-repeat;
-    background-size: cover;
-    animation: section 2s;
-} */
+.container-projects h1{
+    padding: 30px;
+}
+
+
