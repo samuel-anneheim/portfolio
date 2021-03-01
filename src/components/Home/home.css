@@ -10,10 +10,6 @@ section.container-home{
     animation: section 2s;
 }
 
-@keyframes section {
-    from{opacity: 0;}
-    to{opacity: 1;}
-}
 
 article.center{
     display: flex;

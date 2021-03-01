@@ -16,14 +16,38 @@ section.container-projects{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: transparent center no-repeat;
-    background-size: cover;
     color: #E3E1D8;
     transition: all 500ms;
+    position: relative;
 }
 
 .container-projects h1{
-    padding: 30px;
+    padding: 50px 0;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    z-index: 3;
+    position: absolute;
+}
+
+.container-projects article div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: absolute;
+}
+
+@keyframes back {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+@keyframes reverse {
+    from{opacity: 1;}
+    to{opacity: 0;}
 }
 
 
