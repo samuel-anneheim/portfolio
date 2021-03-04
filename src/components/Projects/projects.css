@@ -28,7 +28,15 @@ section.container-projects{
     text-align: center;
     margin: 0;
     z-index: 3;
-    position: absolute;
+    /* position: absolute; */
+}
+
+.container-projects a{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .container-projects article div{
@@ -41,13 +49,59 @@ section.container-projects{
     position: absolute;
 }
 
+.container-projects span{
+    position: absolute;
+    top: 55%;
+    z-index: 5;
+}
+
 @keyframes back {
     from{opacity: 0;}
     to{opacity: 1;}
 }
-@keyframes reverse {
-    from{opacity: 1;}
-    to{opacity: 0;}
+
+@media (max-width: 900px){
+    section.container-projects{
+        flex-direction: column;
+        position: relative;
+    }
+
+    .container-projects h1{
+        position: absolute;
+        top: 35%;
+    }
+
+    .container-projects article{
+        width: 95%;
+        height: 200px;
+        margin: 20px auto;
+        border-radius: 10px;
+        background-size: cover;
+    }
+
+    .un{
+        background: url(../../img/meteo.jpg) center 70% no-repeat;
+    }
+
+    .deux{
+        background: url(../../img/bgBierre.jpg) center 70% no-repeat;
+    }
+
+    .trois{
+        background: url(../../img/manga.jpg) center 70% no-repeat;
+    }
+
+    .quatre{
+        background: url(../../img/bgBierre.jpg) center 70% no-repeat;
+    }
+
+    .container-projects article div{
+        border-radius: 10px;  
+    }
+
+    .container-projects article span{
+        top: 75%;
+    }
 }
 
 

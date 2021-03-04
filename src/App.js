@@ -4,6 +4,8 @@ import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';
 import { Home } from './components/Home/Home';
 import { Projects } from './components/Projects/Projects';
+import { Meteo } from './components/Meteo/Meteo';
+
 
 
 
@@ -19,6 +21,9 @@ function App() {
           </Route>
           <Route path='/projets' exact>
             <Projects />
+          </Route>
+          <Route path='/projets/meteo' >
+            <Meteo />
           </Route>
         </Switch>
 

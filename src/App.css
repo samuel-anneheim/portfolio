@@ -1,9 +1,10 @@
 .App{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: url(./img/pexels-alex-conchillos-3745234.jpg) center no-repeat;
+    background: url(./img/pexels-alex-conchillos-3745234.jpg) center no-repeat fixed;
     background-size: cover;
+    color: #E3E1D8;
 }
