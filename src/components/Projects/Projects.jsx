@@ -3,13 +3,14 @@ import './projects.css';
 import bierre from '../../img/bgBierre.jpg';
 import manga from '../../img/manga.jpg'
 import meteo from '../../img/meteo.jpg'
+import movie from '../../img/movie.jpg'
 import { Link } from 'react-router-dom';
 
 export const Projects = () => {
     const [inHoverManga, setHoverManga] = useState(false);
     const [inHoverBierre, setHoverBierre] = useState(false);
     const [inHoverMeteo, setHoverMeteo] = useState(false);
-    const [inHoverTest2, setHoverTest2] = useState(false);
+    const [inHoverMovie, setHoverMovie] = useState(false);
 
 
     let styleBierre = {
@@ -30,11 +31,11 @@ export const Projects = () => {
         animation: inHoverMeteo ? 'back 800ms' : '',
         transition: inHoverMeteo ? 'all 800ms' : '',
     }
-    let styleTest2 = {
-        background: inHoverTest2 ? `url(${bierre}) center 70% no-repeat` : `transparent`,
-        backgroundSize: inHoverTest2 ? 'cover' : 'initial',
-        animation: inHoverTest2 ? 'back 800ms' : '',
-        transition: inHoverTest2 ? 'all 800ms' : '',
+    let styleMovie = {
+        background: inHoverMovie ? `url(${movie}) center 70% no-repeat` : `transparent`,
+        backgroundSize: inHoverMovie ? 'cover' : 'initial',
+        animation: inHoverMovie ? 'back 800ms' : '',
+        transition: inHoverMovie ? 'all 800ms' : '',
     }
 
 
@@ -75,11 +76,12 @@ export const Projects = () => {
             </article>
 
             <article className="deux">
-                <div style={styleTest2}>
+                <div style={styleMovie}>
                 </div>
 
-                <h1 onMouseEnter={() => setHoverTest2(true)}
-                    onMouseLeave={() => setHoverTest2(false)}>Projet 1</h1>
+                <h1 onMouseEnter={() => setHoverMovie(true)}
+                    onMouseLeave={() => setHoverMovie(false)}>Api film</h1>
+                <span>HTML / CSS / React JS </span>
 
             </article>
 
