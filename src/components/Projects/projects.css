@@ -37,6 +37,7 @@ section.container-projects{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .container-projects article div{
